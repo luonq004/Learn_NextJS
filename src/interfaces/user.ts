@@ -36,3 +36,13 @@ export interface ICustomUser extends User {
 export interface ICustomSession extends Session {
   user?: ICustomUser;
 }
+
+export interface IGuest {
+  id: number;
+  fullName: string;
+  email: string;
+  created_at: string;
+  nationalID?: string;
+  nationality?: string;
+  countryFlag?: string;
+}
